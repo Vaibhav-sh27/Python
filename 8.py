@@ -1,0 +1,1 @@
+fileinp = open("Marks.det",)

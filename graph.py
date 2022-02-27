@@ -1,0 +1,18 @@
+from tkinter import *
+window= Tk()
+w=Canvas(window,bg= "green",highlightcolor="black",width= 500,height=200).grid(row=1)
+upperframe=Frame(window).grid(row=2)
+Label(upperframe, text="Choose gender").grid(row=2)
+var1=IntVar()
+Checkbutton(upperframe,text='male',variable=var1,bg="yellow").grid(row=3)
+var2= IntVar()
+Checkbutton(upperframe,text='Female',variable=var2,bg="purple").grid(row=4)
+window.title('Welcome')
+bottomframe=Frame(window).grid(row=5)
+Label(bottomframe, text="First Name").grid(row=5,column=0)
+d1=Entry(bottomframe).grid(row=5,column=1)
+Label(bottomframe, text="Last Name").grid(row=6,column=0)
+d2=Entry(bottomframe).grid(row=6,column=1)
+button= Button(window,text= "Exit",activebackground= "Blue", activeforeground= "black",bg= "red",width= 25,command= window.destroy).grid()
+
+window.mainloop()
